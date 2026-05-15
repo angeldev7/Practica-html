@@ -48,19 +48,24 @@
             </p>
         </article>
 
-        <nav style="background-color: #e9ecef; padding: 1rem; border-radius: 8px; margin-bottom: 20px; text-align: center;">
+        <nav
+            style="background-color: #e9ecef; padding: 1rem; border-radius: 8px; margin-bottom: 20px; text-align: center;">
             <ul style="list-style: none; margin: 0; padding: 0;">
                 <li style="display: inline; margin: 0 10px;">
-                    <a href="#consulta-ciudadano" style="color: #34495e; text-decoration: none; font-weight: bold;">Consulta</a>
+                    <a href="#consulta-ciudadano"
+                        style="color: #34495e; text-decoration: none; font-weight: bold;">Consulta</a>
                 </li>
                 <li style="display: inline; margin: 0 10px;">
-                    <a href="#seleccion-provincia" style="color: #34495e; text-decoration: none; font-weight: bold;">Atención</a>
+                    <a href="#seleccion-provincia"
+                        style="color: #34495e; text-decoration: none; font-weight: bold;">Atención</a>
                 </li>
                 <li style="display: inline; margin: 0 10px;">
-                    <a href="#servicios-interes" style="color: #34495e; text-decoration: none; font-weight: bold;">Suscripción</a>
+                    <a href="#servicios-interes"
+                        style="color: #34495e; text-decoration: none; font-weight: bold;">Suscripción</a>
                 </li>
                 <li style="display: inline; margin: 0 10px;">
-                    <a href="#registro-ciudadano" style="color: #34495e; text-decoration: none; font-weight: bold;">Registro</a>
+                    <a href="#registro-ciudadano"
+                        style="color: #34495e; text-decoration: none; font-weight: bold;">Registro</a>
                 </li>
                 <li style="display: inline; margin: 0 10px;">
                     <a href="#login-portal" style="color: #34495e; text-decoration: none; font-weight: bold;">Acceso</a>
@@ -70,10 +75,12 @@
 
         <section id="consulta-ciudadano"
             style="background-color: white; padding: 24px; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-            <h3 style="font-size: 1.4em; color: #34495e; margin-top: 0;">1. Consulta de Estado de Trámite</h3>
-            <p style="color: #555; margin-bottom: 16px;">Verifique el estado de su solicitud de ciudadanía digital usando su número de cédula.</p>
+            <h3 style="font-size: 1.4em; color: #34495e; margin-top: 0;">1. Consulta de estado de trámite</h3>
+            <p style="color: #555; margin-bottom: 16px;">Verifique el estado de su solicitud de ciudadanía digital
+                usando su número de cédula.</p>
             <form method="GET" action="">
-                <label for="cedula" style="display: block; margin-bottom: 8px; color: #333; font-weight: bold;">Número de Cédula:</label>
+                <label for="cedula" style="display: block; margin-bottom: 8px; color: #333; font-weight: bold;">Número
+                    de Cédula:</label>
                 <input type="text" id="cedula" name="cedula" placeholder="Ingrese sus 10 dígitos" required
                     maxlength="10"
                     style="width: calc(100% - 24px); padding: 10px; border-radius: 4px; border: 1px solid #ccc; font-size: 1em;">
@@ -86,10 +93,12 @@
 
         <section id="seleccion-provincia"
             style="background-color: white; padding: 24px; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-            <h3 style="font-size: 1.4em; color: #34495e; margin-top: 0;">2. Búsqueda de Puntos de Atención</h3>
-            <p style="color: #555; margin-bottom: 16px;">Seleccione su provincia para encontrar los puntos de atención más cercanos.</p>
+            <h3 style="font-size: 1.4em; color: #34495e; margin-top: 0;">2. Búsqueda de puntos de atención</h3>
+            <p style="color: #555; margin-bottom: 16px;">Seleccione su provincia para encontrar los puntos de atención
+                más cercanos.</p>
             <form method="GET" action="">
-                <label for="provincia" style="display: block; margin-bottom: 8px; color: #333; font-weight: bold;">Provincia:</label>
+                <label for="provincia"
+                    style="display: block; margin-bottom: 8px; color: #333; font-weight: bold;">Provincia:</label>
                 <select id="provincia" name="provincia" required
                     style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #ccc; font-size: 1em;">
                     <option value="">-- Seleccione una provincia --</option>
@@ -127,19 +136,25 @@
 
         <section id="servicios-interes"
             style="background-color: white; padding: 24px; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-            <h3 style="font-size: 1.4em; color: #34495e; margin-top: 0;">3. Suscripción a Servicios Digitales</h3>
-            <p style="color: #555; margin-bottom: 16px;">Seleccione los servicios sobre los que desea recibir notificaciones.</p>
+            <h3 style="font-size: 1.4em; color: #34495e; margin-top: 0;">3. Suscripción a servicios digitales</h3>
+            <p style="color: #555; margin-bottom: 16px;">Seleccione los servicios sobre los que desea recibir
+                notificaciones.</p>
             <form method="GET" action="">
                 <fieldset style="border: none; padding: 0; margin: 0;">
-                    <legend style="font-weight: bold; color: #333; font-size: 1.1em; margin-bottom: 12px;">Servicios de interés:</legend>
-                    <label style="display: block; margin-bottom: 10px; font-size: 1em;"><input type="checkbox" name="servicios[]"
-                            value="certificados" style="margin-right: 10px;"> Emisión de Certificados</label>
-                    <label style="display: block; margin-bottom: 10px; font-size: 1em;"><input type="checkbox" name="servicios[]"
-                            value="tramites" style="margin-right: 10px;"> Trámites en Línea</label>
-                    <label style="display: block; margin-bottom: 10px; font-size: 1em;"><input type="checkbox" name="servicios[]"
-                            value="noticias" style="margin-right: 10px;"> Noticias y Actualizaciones</label>
-                    <label style="display: block; margin-bottom: 10px; font-size: 1em;"><input type="checkbox" name="servicios[]"
-                            value="seguridad" style="margin-right: 10px;"> Alertas de Seguridad</label>
+                    <legend style="font-weight: bold; color: #333; font-size: 1.1em; margin-bottom: 12px;">Servicios de
+                        interés:</legend>
+                    <label style="display: block; margin-bottom: 10px; font-size: 1em;">
+                        <input type="checkbox" name="servicios[]" value="certificados" style="margin-right: 10px;">
+                        Emisión de Certificados</label>
+                    <label style="display: block; margin-bottom: 10px; font-size: 1em;">
+                        <input type="checkbox" name="servicios[]" value="tramites" style="margin-right: 10px;"> Trámites
+                        en Línea</label>
+                    <label style="display: block; margin-bottom: 10px; font-size: 1em;">
+                        <input type="checkbox" name="servicios[]" value="noticias" style="margin-right: 10px;"> Noticias
+                        y Actualizaciones</label>
+                    <label style="display: block; margin-bottom: 10px; font-size: 1em;">
+                        <input type="checkbox" name="servicios[]" value="seguridad" style="margin-right: 10px;"> Alertas
+                        de Seguridad</label>
                 </fieldset>
                 <button type="submit"
                     style="margin-top: 15px; padding: 10px 20px; background-color: #2a7a9b; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 1em;">
@@ -150,24 +165,30 @@
 
         <section id="registro-ciudadano"
             style="background-color: white; padding: 24px; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-            <h3 style="font-size: 1.4em; color: #34495e; margin-top: 0;">4. Formulario de Registro de Nuevo Ciudadano Digital</h3>
-            <p style="color: #555; margin-bottom: 16px;">Complete sus datos para obtener su credencial de ciudadanía digital.</p>
-            <form method="POST" action="">
+            <h3 style="font-size: 1.4em; color: #34495e; margin-top: 0;">4. Formulario de registro de Nuevo Ciudadano
+                Digital</h3>
+            <p style="color: #555; margin-bottom: 16px;">Complete sus datos para obtener su credencial de ciudadanía
+                digital.</p>
+            <form method="get" action="">
                 <div style="margin-bottom: 15px;">
-                    <label for="nombre" style="display: block; margin-bottom: 8px; color: #333; font-weight: bold;">Nombres y
+                    <label for="nombre"
+                        style="display: block; margin-bottom: 8px; color: #333; font-weight: bold;">Nombres y
                         Apellidos:</label>
                     <input type="text" id="nombre" name="nombre" required minlength="3"
                         placeholder="Sus nombres y apellidos completos"
                         style="width: calc(100% - 24px); padding: 10px; border-radius: 4px; border: 1px solid #ccc; font-size: 1em;">
                 </div>
                 <div style="margin-bottom: 15px;">
-                    <label for="email" style="display: block; margin-bottom: 8px; color: #333; font-weight: bold;">Correo Electrónico de
+                    <label for="email"
+                        style="display: block; margin-bottom: 8px; color: #333; font-weight: bold;">Correo Electrónico
+                        de
                         Contacto:</label>
                     <input type="email" id="email" name="email" required placeholder="su.correo@dominio.com"
                         style="width: calc(100% - 24px); padding: 10px; border-radius: 4px; border: 1px solid #ccc; font-size: 1em;">
                 </div>
                 <div style="margin-bottom: 15px;">
-                    <label for="fecha-nacimiento" style="display: block; margin-bottom: 8px; color: #333; font-weight: bold;">Fecha de
+                    <label for="fecha-nacimiento"
+                        style="display: block; margin-bottom: 8px; color: #333; font-weight: bold;">Fecha de
                         Nacimiento:</label>
                     <input type="date" id="fecha-nacimiento" name="fecha_nacimiento" required
                         style="width: calc(100% - 24px); padding: 10px; border-radius: 4px; border: 1px solid #ccc; font-size: 1em;">
@@ -179,18 +200,22 @@
             </form>
         </section>
 
-        <section id="login-portal" style="background-color: white; padding: 24px; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-            <h3 style="font-size: 1.4em; color: #34495e; margin-top: 0;">5. Acceso al Portal de Ciudadano</h3>
-            <p style="color: #555; margin-bottom: 16px;">Ingrese con sus credenciales para acceder a los servicios en línea.</p>
-            <form method="POST" action="">
+        <section id="login-portal"
+            style="background-color: white; padding: 24px; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <h3 style="font-size: 1.4em; color: #34495e; margin-top: 0;">5. Acceso al portal de ciudadano</h3>
+            <p style="color: #555; margin-bottom: 16px;">Ingrese con sus credenciales para acceder a los servicios en
+                línea.</p>
+            <form method="get" action="">
                 <div style="margin-bottom: 15px;">
-                    <label for="login-email" style="display: block; margin-bottom: 8px; color: #333; font-weight: bold;">Correo
+                    <label for="login-email"
+                        style="display: block; margin-bottom: 8px; color: #333; font-weight: bold;">Correo
                         Electrónico:</label>
                     <input type="email" id="login-email" name="login_email" required placeholder="su.correo@dominio.com"
                         style="width: calc(100% - 24px); padding: 10px; border-radius: 4px; border: 1px solid #ccc; font-size: 1em;">
                 </div>
                 <div style="margin-bottom: 15px;">
-                    <label for="password" style="display: block; margin-bottom: 8px; color: #333; font-weight: bold;">Contraseña:</label>
+                    <label for="password"
+                        style="display: block; margin-bottom: 8px; color: #333; font-weight: bold;">Contraseña:</label>
                     <input type="password" id="password" name="password" placeholder="Ingrese su contraseña segura"
                         required minlength="8" maxlength="16"
                         pattern="(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&.#_-])[A-Za-z\d@$!%*?&.#_-]{8,16}"
